@@ -102,6 +102,11 @@ span{
 .home-img img{
     width: 25vw;
     animation:floatImage 4s ease-in-out infinite;
+   margin-right: 20px;
+   margin-left: 20px;
+   border-radius: 50%;
+
+
 
 }
 
@@ -655,4 +660,72 @@ inherits: false;
 }
 .gold{
     color:	#FFD700 ;
+}
+.skills-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    gap: 2rem; /* Space between boxes */
+}
+
+.skills-container .skills-box {
+    background: var(--snd-bg-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    height: 300px; /* Set a fixed height for uniformity */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+}
+
+.skills-icon-box {
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; /* Space below the icon box */
+}
+
+.skills-box img.skills-icon {
+    max-height: 80px; /* Set max height for icons */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin: 0 0.5rem; /* Add horizontal margin between icons */
+}
+
+.skills-box h3 {
+    font-size: 2.5rem; /* Adjust font size for headings */
+    margin: 0.5rem 0; /* Adjust margin for better spacing */
+}
+#contact-form{
+    padding: 15px;
+}
+.intro{
+    padding: 0 30px;
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* One column for mobile devices */
+    }
+
+    .skills-icon-box {
+        flex-direction: column; /* Change to vertical layout on mobile */
+        align-items: center; /* Center icons horizontally */
+    }
+
+    .skills-box img.skills-icon {
+       
+        max-height: 120px; /* Increase max height for icons on mobile */
+        margin: 0.5rem 0; /* Adjust margin for vertical spacing */
+    }
+    .skills-box h3 {
+        font-size: 3rem; /* Adjust font size for headings */
+        margin: 0.5rem 0; /* Adjust margin for better spacing */
+    }
+    .intro{
+        padding: 0 5px;
+    }
+
 }

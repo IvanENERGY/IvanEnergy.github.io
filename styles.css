@@ -592,9 +592,9 @@ a.unchanged-anchor, a.unchanged-anchor:visited, a.unchanged-anchor:hover, a.unch
         background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
               var(--angle),
               yellow,
-              red
+              rgb(34, 0, 255)
             ) border-box;
-        animation: 5s rotate linear infinite;
+        animation: 10s rotate linear infinite;
 }
       
 @keyframes rotate {

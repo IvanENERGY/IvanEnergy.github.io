@@ -550,10 +550,11 @@ span.client-side-usage{
     color: blue;
     font-weight: bold;
     text-decoration: underline;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 .project-desc{
     color: blue;
+ 
 }
 .contact-tips{
     text-align: center;

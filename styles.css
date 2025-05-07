@@ -265,13 +265,14 @@ span.client-side-usage{
     left:0;
     width:100%;
     height:100%;
-    background: linear-gradient(rgba(0,0,0,0.1),var(--main-color));
+    background: #ffffff;
+    background: linear-gradient(to bottom, rgba(224, 242, 247,0.9), rgba(224, 242, 247,0.9));
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding:  4rem;
     transform: translateY(100%);
     transition: .5s ease;
 
@@ -549,6 +550,7 @@ span.client-side-usage{
     color: blue;
     font-weight: bold;
     text-decoration: underline;
+    margin-bottom: 5px;
 }
 .project-desc{
     color: blue;
